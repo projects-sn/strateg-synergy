@@ -23,10 +23,10 @@ ARTEMOX_BASE = "https://api.artemox.com/v1"
 ARTEMOX_MODEL = "gpt-4o"
 
 # Retrieval
-BM25_TOP_K = 10
-SEMANTIC_TOP_K = 10
-RERANK_TOP_K = 6
-COMBINED_CANDIDATES = 20  # сколько кандидатов отдаём в реранкер
+BM25_TOP_K = 20
+SEMANTIC_TOP_K = 20
+RERANK_TOP_K = 5
+COMBINED_CANDIDATES = 40  # сколько кандидатов отдаём в реранкер
 
 # Lightweight scoring / filtering
 MIN_QUERY_TOKEN_OVERLAP = 1  # 0 = без фильтра; 1 = хотя бы 1 общий токен
