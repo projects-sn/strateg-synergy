@@ -1,0 +1,21 @@
+{
+  "model_name": "intfloat/multilingual-e5-large",
+  "chunking": {
+    "type": "word",
+    "max_words": 220,
+    "overlap_words": 50
+  },
+  "fields": {
+    "source": [
+      "stenogram",
+      "briefing",
+      "presentation"
+    ],
+    "meta": [
+      "file",
+      "date",
+      "page",
+      "chunk_id"
+    ]
+  }
+}
