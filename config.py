@@ -3,10 +3,10 @@ import os
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
-RAG_INDEX = BASE / "rag_index"
-DOCUMENTS_JSON = RAG_INDEX / "documents.json"
-FAISS_INDEX = RAG_INDEX / "index.faiss"
-CONFIG_JSON = RAG_INDEX / "config.json"
+# RAG_INDEX = BASE / "rag_index"
+DOCUMENTS_JSON = "documents.json"
+FAISS_INDEX = "index.faiss"
+CONFIG_JSON = "config.json"
 
 # Embedding model (должен совпадать с тем, на чём собран index.faiss)
 EMBEDDING_MODEL = "intfloat/multilingual-e5-large"
