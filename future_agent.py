@@ -35,16 +35,14 @@ SYSTEM = """Ты — стратегический аналитик корпор�
 Сроки для вариантов НЕ указывать.
 Пиши цельным, аккуратным текстом без "служебных" фрагментов и без некорректных разрывов формата."""
 
-
 def _client() -> OpenAI:
-    artemox_key = os.getenv("ARTEMOX_API_KEY", "").strip()
-    if not artemox_key:
-        raise ValueError("ARTEMOX_API_KEY не задан.")
+    openrouter_key = os.getenv("OPENROUTER_API_KEY", "").strip()
+    if not openrouter_key:
+        raise ValueError("OPENROUTER_API_KEY не задан.")
     return OpenAI(
-        base_url=config.ARTEMOX_BASE,
-        api_key=artemox_key,
+        base_url=config.OPENROUTER_BASE,
+        api_key=openrouter_key,
     )
-
 
 @dataclass
 class FutureResult:
